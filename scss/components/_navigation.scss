@@ -7,17 +7,25 @@
     list-style: none;
   }
 
-  a {
-    text-decoration: none;
-    color: clr(neutral, 100);
-    font: {
-      family: $ff-accent;
-      size: fs(600);
-    }
+  li {
+    transition: transform 250ms;
 
     &:is(:hover, :focus) {
-      opacity: .7;
-      text-decoration: underline;
+      transform: scale(1.05) translateY(10%);
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: clr(accent, 900);
+    font: {
+      family: $ff-accent;
+      size: fs(400);
+    }
+    transition: opacity 250ms;
+
+    &:is(:hover, :focus) {
+      opacity: 0.5;
     }
   }
 }

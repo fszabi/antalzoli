@@ -19,11 +19,13 @@ $section-xl-padding: 25rem;
 $card-body-padding: clamp(2rem, 3.5vw, 5rem);
 
 $grid-gap: 1.5rem;
+$column-gap: 1.5rem;
+$row-gap: 1.5rem;
 $auto-fit-min: 15.625rem;
 $auto-fit-max: 1fr;
 
 $flex-group-gap: 1rem;
 
 $container-inline-padding: 1rem;
-$container-max-width: 60rem;
-$container-max-width-wide: 75rem;
+$container-max-width: 70rem;
+$container-max-width-wide: 80rem;

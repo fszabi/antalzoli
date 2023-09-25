@@ -1,0 +1,25 @@
+@use "../abstracts/" as *;
+
+.grid {
+  display: grid;
+  column-gap: var(--column-gap, $column-gap);
+  row-gap: var(--row-gap, $row-gap);
+  --column-gap: 3em;
+  --row-gap: 3em;
+
+  &.about {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 500px;
+
+    img {
+      grid-column: 1;
+      align-self: stretch;
+      object-fit: cover;
+    }
+
+    p {
+      grid-row: 1 / -1;
+      grid-column: 2;
+    }
+  }
+}
