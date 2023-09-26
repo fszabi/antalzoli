@@ -5,21 +5,28 @@
   column-gap: var(--column-gap, $column-gap);
   row-gap: var(--row-gap, $row-gap);
   --column-gap: 3em;
-  --row-gap: 3em;
 
-  &.about {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 200px 500px;
+  .about & {
+    grid-template-columns: 1fr;
 
-    img {
-      grid-column: 1;
-      align-self: stretch;
-      object-fit: cover;
-    }
+    @include mqMin(medium) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: min-content 1fr;
 
-    p {
-      grid-row: 1 / -1;
-      grid-column: 2;
+      h2 {
+        height: min-content;
+      }
+
+      img {
+        grid-column: 1;
+        align-self: stretch;
+        object-fit: cover;
+      }
+
+      p {
+        grid-row: 1 / -1;
+        grid-column: 2;
+      }
     }
   }
 }

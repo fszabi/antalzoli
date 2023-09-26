@@ -1,0 +1,18 @@
+@use "../abstracts/" as *;
+
+.section-header {
+  margin-block-end: size(80);
+
+  h2 {
+    color: clr(accent, 400);
+  }
+
+  p {
+    margin-top: 0.75em;
+    max-width: 50ch;
+
+    .text-center & {
+      margin-inline: auto;
+    }
+  }
+}

@@ -1,6 +1,10 @@
 @use "../abstracts/" as *;
 
 .primary-header {
-  background-color: clr(neutral, 200);
   padding: size(24);
+  border-bottom: 1px solid #00000033;
+
+  @media (prefers-color-scheme: dark) {
+    border: 0;
+  }
 }

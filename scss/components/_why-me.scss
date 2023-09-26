@@ -1,0 +1,10 @@
+.why-me {
+  img {
+    transition: transform 250ms, border-radius 250ms;
+
+    &:is(:hover, :focus) {
+      border-radius: 40px;
+      transform: rotate3d(1, -1, 0, 15deg);
+    }
+  }
+}
